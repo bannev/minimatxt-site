@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Support — MinimaTXT</title>
+  <title>MinimaTXT — Support</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -14,14 +14,19 @@
       background: #fafafa;
       color: #333;
     }
+    header {
+      text-align: center;
+      padding: 2em 1em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      font-weight: 600;
+    }
     main {
       max-width: 600px;
       margin: 0 auto;
-      padding: 2em 1em;
-    }
-    h1 {
-      font-size: 1.8em;
-      font-weight: 600;
+      padding: 1em;
     }
     h2 {
       font-size: 1.3em;
@@ -41,14 +46,18 @@
       text-align: center;
       font-size: 0.9em;
       color: #999;
-      padding: 2em 0;
+      padding: 2em 1em;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
 
-  <main>
+  <header>
     <h1>Support</h1>
+  </header>
+
+  <main>
     <p>If you need help, have a question, or want to report an issue — we're here to help.</p>
 
     <h2>Contact</h2>
@@ -59,18 +68,46 @@
     <ul>
       <li><strong>Does MinimaTXT sync with iCloud?</strong><br>No. All files are stored locally on your iPhone. The app does not use iCloud, servers, or external storage.</li>
 
-      <li><strong>Can I import .txt files?</strong><br>Yes. Tap the menu in the top-right corner and choose “Add from Files” to open files from the Files app.</li>
+      <li><strong>Can I import .txt files?</strong><br>Yes. Tap the menu in the top-right corner and choose "Add from Files" to open files from the Files app.</li>
 
-      <li><strong>Can I export my files?</strong><br>Yes. You can export individual files, multiple selections, or use “Export All” to save everything as a ZIP archive.</li>
+      <li><strong>Can I export my files?</strong><br>Yes. You can export individual files, multiple selections, or use "Export All as ZIP" to save everything in one archive.</li>
 
       <li><strong>Does MinimaTXT support Markdown?</strong><br>No. MinimaTXT is intentionally focused on plain <code>.txt</code> files only — no formatting, no markup.</li>
 
       <li><strong>The app crashed — what should I do?</strong><br>Please send us an email with as much detail as possible (what you were doing, file name, etc.). We'll investigate promptly.</li>
+
+      <li><strong>I accidentally deleted a file. Can you help recover it?</strong><br>No. All files are stored locally on your device. MinimaTXT does not back up your data or sync it with any servers. Not even Apple has access to your content. We recommend using "Export All as ZIP" regularly to keep external backups.</li>
+
+      <li><strong>Does MinimaTXT work offline?</strong><br>Yes. The app is fully offline. It does not require an internet connection and does not communicate with any servers.</li>
+
+      <li><strong>Can I export all my files at once?</strong><br>Yes. Tap the menu and choose "Export All as ZIP" to create a compressed archive of all your files. You can save or share it via the Files app, AirDrop, or other apps.</li>
+
+      <li><strong>Are there any restrictions on file names?</strong><br>Yes. To avoid issues with other systems, file names must follow these rules:<br>
+        – Cannot be empty<br>
+        – Cannot start with a dot (.) or ellipsis (...)<br>
+        – Cannot contain characters like: \ / : * ? " &lt; &gt; |
+      </li>
+
+      <li><strong>What happens if I import a file with a name that already exists?</strong><br>MinimaTXT automatically appends a number like (1), (2), etc., to avoid overwriting your existing file. This happens silently, without asking for confirmation.</li>
+
+      <li><strong>How do I delete a file?</strong><br>Swipe left on a file in the file list, then tap "Delete".</li>
+
+      <li><strong>How does saving work?</strong><br>All changes are saved automatically:<br>
+        – every 30 seconds while editing<br>
+        – when the app goes into the background<br>
+        – when you close the editor<br>
+        There’s no need to save manually.
+      </li>
+
+      <li><strong>Can I organize files into folders?</strong><br>Not yet. All files are listed in a single view. Folder support is planned for a future update.</li>
+
+      <li><strong>Can I change fonts or enable dark mode?</strong><br>MinimaTXT uses a simple, clean theme with one default font. Dark mode is supported and switches automatically based on your iPhone’s appearance settings (under Settings → Display & Brightness).</li>
     </ul>
+
   </main>
 
   <footer>
-    © 2025 MinimaTXT ·
+    © 2025 MinimaTXT<br>
     <a href="index.html">Home</a> ·
     <a href="privacy.html">Privacy Policy</a> ·
     <a href="terms.html">Terms of Use</a>
